@@ -30,3 +30,18 @@
 // console.log(sum);
 
 // ex 3 | Temperature v2.0
+let weatherForcast = Math.ceil(Math.random() * 45 - 5);
+console.log(weatherForcast);
+if (weatherForcast < 10) {
+    document.getElementsByClassName(
+        "weather"
+    ).innerHTML = `The weatherForcast is cold. It is ${weatherForcast}°C`;
+} else if (weatherForcast < 20 && weatherForcast > 10) {
+    document.getElementsByClassName(
+        "weather"
+    ).innerHTML = `The weatherForcast is moderate. It is ${weatherForcast}°C`;
+} else {
+    document.getElementsByClassName(
+        "weather"
+    ).innerHTML = `The weatherForcast is hot. It is ${weatherForcast}°C`;
+}
