@@ -47,15 +47,36 @@
 
 //BONUS EXERCISE
 
-            let n = [1, 2, 5, 7, 10];
-            let sum = 0;
-            for (let i = 0; i < n.length; i++) {
-                sum += n[i];
-            }
-            console.log(sum);
+            // let n = [1, 2, 5, 7, 10];
+            // let sum = 0;
+            // for (let i = 0; i < n.length; i++) {
+            //     sum += n[i];
+            // }
+            // console.log(sum);
 
 
 //EXERCISE 3
+
+
+let weatherForcast = Math.ceil(Math.random() * 45 - 5);
+console.log(weatherForcast);
+if (weatherForcast < 10) {
+    document.getElementById(
+        "weather"
+    ).innerHTML = `The weatherForcast is cold. It is ${weatherForcast}°C`; 
+    document.getElementById("photo").src="/Mona/Basic/img/snowflake-1065155_640.jpg";
+
+} else if (weatherForcast < 20 && weatherForcast > 10) {
+    document.getElementById(
+        "weather"
+    ).innerHTML = `The weatherForcast is moderate. It is ${weatherForcast}°C`;
+    document.getElementById("photo").src="/Mona/Basic/img/sunset-1651426_640.jpg";
+} else {
+    document.getElementById(
+        "weather"
+    ).innerHTML = `The weatherForcast is hot. It is ${weatherForcast}°C`;
+    document.getElementById("photo").src="/Mona/Basic/img/sunset-1651426_640.jpg";
+}
 
 
 

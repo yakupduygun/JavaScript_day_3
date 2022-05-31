@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,93 +8,172 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <style>
-        #navbar7{
-  background: white;
-  box-shadow: 2px 2px 30px black;
-        padding: 5px;
-        margin: 9px;
-        cursor: pointer;
+        #navbar7 {
+            background: white;
+            box-shadow: 2px 2px 30px black;
+            padding: 5px;
+            margin: 9px;
+            cursor: pointer;
         }
 
         .main1 {
-        background-image: url(./pictures/background.jpg.jpg);
-        background-size: cover;
-        background-position: 100%;
-        height: 57vh;
-        box-shadow: 6px 6px 30px rgb(214, 115, 40);
-        padding: 5px;
-        margin: 34px;
-        cursor: pointer;
-      }
+            background-image: url(/Mona/Basic/img/seasons.png);
+            background-size: cover;
+            background-position: 100%;
+            height: 57vh;
+            box-shadow: 6px 6px 30px rgb(214, 115, 40);
+            padding: 5px;
+            margin: 34px;
+            cursor: pointer;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .mona {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 5px solid black;
 
 
+        }
 
+        #snow {
+            border: 5px solid black;
+            height: 200px;
+        }
+
+        #sun {
+            border: 5px solid black;
+            height: 200px;
+        }
+
+        .snow-div {
+            display: flex;
+            text-align: center;
+        }
+
+        .snow-div h3 {
+            background-color: brown;
+            margin-top: 25%;
+        }
+
+        #yakup {
+            background: linear-gradient(0deg, rgba(63, 65, 23, 0.62) 0%, rgba(10, 52, 7, 0.914) 65%, rgba(11, 12, 70, 0.95) 95%);
+            box-shadow: 2px 2px 30px rgb(31, 9, 81);
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            width: 30%;
+
+        }
+
+        .main2 {
+            background: white;
+            box-shadow: 2px 2px 30px black;
+            padding: 5px;
+            margin: 9px;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        .hw-bold {
+            text-decoration: overline;
+            font-size: 18px;
+
+        }
+
+        .figcaption {
+            font-size: 20px;
+            padding: 8px;
+        }
     </style>
 </head>
+
 <body>
 
     <nav id="navbar7" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <i class=" nav-item fa-solid fa-guitar"></i>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Concerts</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="reviews.html">Reviews</a>
-              </li>
-              <li class="nav-item" href="#">
-                <button id="formbutton" type="button" class="btn btn-secondary">Buy a ticket</button>
-              </li>
-          </div>
+            <i class=" nav-item fa-solid fa-guitar"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Concerts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item" href="#">
+                        <button id="formbutton" type="button" class="btn btn-secondary">Buy a ticket</button>
+                    </li>
+            </div>
         </div>
-      </nav>
-    
-      <main class="main1 ">
+    </nav>
+
+    <main class="main1 ">
         <div class="background d-flex justify-content-center py-5">
-    
-          <ul class="world text-light">
-            <ul>
-              <li>
-                <h2>World Music Festival</h2>
-              </li>
+
+            <ul class="world text-light">
+                <ul>
+                    <li>
+                        <h2 class="text-danger">Temperature in Vienna</h2>
+                    </li>
+                </ul>
+
+                
             </ul>
-    
-            <ul class="seats d-flex text-light">
-              <li>
-                <p> <i class="fa-solid fa-chair"></i> 5000 seats</p>
-              </li>
-              <li>
-                <p> <i class="fa-solid fa-person"></i> 12 Artists </p>
-              </li>
-              <li>
-                <p> <i class="fa-solid fa-location-dot"></i> Vienna/Austria </p>
-              </li>
-            </ul>
-            <ul class="d-flex justify-content-center">
-              <li><a class="btn btn-secondary" href="#" role="button">Book now</a></li>
-            </ul>
-          </ul>
-    
+
         </div>
-      </main>
+    </main>
 
 
+
+    <main class="main2 py-2 text-light ">
+        <section class="d-flex justify-content-around ">
+            <!-- <strong class="hw-bold d-flex justify-content-center py-3 text-dark">STAGE1</strong> -->
+            <div class="row gap-3 g-6 justify-content-center m-3">
+
+                <div id="yakup" class=" border">
+                    <img id="photo" class="img-fluid">
+                    <figcaption class="figcaption d-flex justify-content-center">
+                        <div>
+                            <ul class="text-warning py-5 px-2">
+                                <strong id="getMonth">Jan</strong>
+                                <strong id="getDay">25</strong>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Vienna</strong><br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur nam
+                            necessitatibus!
+                            Exercitationem, dignissimos iure!
+                            <hr>
+                            <p id="weather"> Price:$60 </p>
+                        </div>
+                    </figcaption>
+                </div>
+        </section>
+    </main>
 
 
 
@@ -102,4 +182,5 @@
 
     <script src="basic.js"></script>
 </body>
+
 </html>
